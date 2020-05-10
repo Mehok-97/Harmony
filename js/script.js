@@ -17,13 +17,37 @@ $(document).ready(function(){
     });
 
     //Family Scroliing
-    $('#scroll-down').click(function(){
-        $('#Family-Container').scrollTo('+=258px');
-    });
-    
-    $('#scroll-up').click(function(){
-        $('#Family-Container').scrollTo('-=258px');
-    });
+    if (screen.width >= 1200){
+        $('#scroll-down').click(function(){
+            $('#Family-Container').scrollTo('+=258px');
+        });
+        
+        $('#scroll-up').click(function(){
+            $('#Family-Container').scrollTo('-=258px');
+        });
+    }
+    else if (screen.width<768) {
+        $("#Family-Container").css("height", "225");
+        $('#scroll-down').click(function(){
+            $('#Family-Container').scrollTo('+=230px');
+        });
+        
+        $('#scroll-up').click(function(){
+            $('#Family-Container').scrollTo('-=230px');
+        });
+
+    }
+    else if (768 < screen.width < 992) {
+        $("#Family-Container").css("height", "225");
+        $(".family h4").css("font-size", "120%");
+        $('#scroll-down').click(function(){
+            $('#Family-Container').scrollTo('+=225px');
+        });
+        
+        $('#scroll-up').click(function(){
+            $('#Family-Container').scrollTo('-=230px');
+        });
+    }
     //End Family Scroliing
     
     
