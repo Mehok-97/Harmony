@@ -228,7 +228,7 @@ img[class$="paint6"]{
 	padding:10px;
 }
 @media (max-width:400px){
-	img{
+	img[class^="paint"]{
 		
 		width: 100px !important;
 		 height: 160px !important;
