@@ -39,9 +39,6 @@
 
 .carousel-caption {
 	font-size: x-large;
-	top: 50%;
-	transform: translateY(-50%);
-	bottom: initial;
 }
 #carouselButton {
 	right: 0px;
