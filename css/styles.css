@@ -84,12 +84,17 @@
 }
 /*end of star rating css*/
 
+
+
+
+
+
 /*timeline*/
  main {
 	 min-width: 300px;
 	 max-width: 900px;
 	 margin: auto;
-	counter-reset: section 2015; 
+	counter-reset: section; 
 	padding: 0 4em;
 }
  main p {
@@ -108,15 +113,15 @@
  main p:before {
 	 content: counter(section);
 	 position: absolute;
-	 border-radius: 20%;
+	 border-radius: 50%;
 	 padding: 20px;
 	 height: 1.25em;
-	 width: 5em;
+	 width: 1.1 em;
 	 background-color: #34435e;
 	 text-align: center;
 	 line-height: 0em;
 	 color: #fff;
-	 font-size: 1em;
+	 font-size: 1.25em;
 }
  main p:nth-child(odd) {
 	 border-right: 3px solid;
@@ -178,44 +183,60 @@
 	margin: 0px ;
 	padding: 0px;
  }
+
  img[class$="paint1"]{
 	border:6px groove #8b4513;
-	width: 225px;
-	 height: 151px;
+	width: 192px;
+	 height: 120px;
 	 margin:auto;
 }
 img[class$="paint3"]{
 	border:6px groove #cd8500;
-	width: 225px;
-	 height: 151px;
+	width: 192px;
+	 height: 120px;
 	 margin:auto;
 }
 img[class$="paint5"]{
 	border:6px groove #a0522d;
-	width: 225px;
-	 height: 151px;
+	width: 192px;
+	 height: 120px;
 	 margin:auto;
 }
 img[class$="paint2"]{
 	border:6px groove #ffa54f;
-	width: 151px;
-	 height: 225px;
+	width: 120px;
+	 height: 192px;
 	 margin:auto;
 }
 img[class$="paint4"]{
 	border:6px groove #8b5a2b;
-	width: 151px;
-	 height: 225px;
+	width: 120px;
+	 height: 192px;
 	 margin:auto;
 }
 img[class$="paint6"]{
 	border:6px groove gold;
-	width: 151px;
-	 height: 225px;
+	width: 120px;
+	 height: 192px;
 	 margin:auto;
 }
 #paint-title{
 	color:white;
 	padding:10px;
 }
-
+@media (max-width:400px){
+	img[class^="paint"]{
+		
+		width: 100px !important;
+		 height: 160px !important;
+	}
+	img[class$="paint1"]{
+       content:url("../img/Paintings/thumbnails/paint1v.jpg");
+	}
+	img[class$="paint3"]{
+		content:url("../img/Paintings/thumbnails/paint2v.jpg");
+	}
+	img[class$="paint5"]{
+		content:url("../img/Paintings/thumbnails/paint10v.jpg");
+	}
+}
